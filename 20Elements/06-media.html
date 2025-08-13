@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Media Elements Demo</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>💥 MediaElements</h1>
+    <p>Panduan lengkap elemen media HTML untuk pengembangan web modern</p>
+  </header>
+  
+  <div class="container">
+    <section class="section">
+      <h2 class="section-title">
+        <span>📝</span>
+        <span>Basic Media Elements</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 Dasar-dasar Media HTML</h4>
+        <p>HTML menyediakan elemen khusus untuk menampilkan berbagai jenis media seperti gambar, audio, dan video.</p>
+      </div>
+      
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>media.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="comment">&lt;!-- Gambar dasar --&gt;</span><br>
+            <span class="tag">&lt;img <span class="attr">src</span>=<span class="string">"image.jpg"</span> <span class="attr">alt</span>=<span class="string">"Deskripsi gambar"</span> <span class="attr">width</span>=<span class="string">"400"</span>&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Gambar responsif --&gt;</span><br>
+            <span class="tag">&lt;picture&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;source <span class="attr">media</span>=<span class="string">"(min-width: 800px)"</span> <span class="attr">srcset</span>=<span class="string">"large.jpg"</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;source <span class="attr">media</span>=<span class="string">"(min-width: 400px)"</span> <span class="attr">srcset</span>=<span class="string">"medium.jpg"</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;img <span class="attr">src</span>=<span class="string">"small.jpg"</span> <span class="attr">alt</span>=<span class="string">"Gambar responsif"</span>&gt;</span><br>
+            <span class="tag">&lt;/picture&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Audio dasar --&gt;</span><br>
+            <span class="tag">&lt;audio <span class="attr">controls</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;source <span class="attr">src</span>=<span class="string">"audio.mp3"</span> <span class="attr">type</span>=<span class="string">"audio/mpeg"</span>&gt;</span><br>
+            &nbsp;&nbsp;Browser Anda tidak mendukung elemen audio.<br>
+            <span class="tag">&lt;/audio&gt;</span>
+          </code>
+        </div>
+      </div>
+      
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>&lt;img&gt;</code> - Menampilkan <strong>gambar</strong> dengan atribut wajib <code>src</code> dan <code>alt</code><br>
+          • <code>&lt;picture&gt;</code> - Menyediakan <span class="highlight">gambar responsif</span> untuk berbagai ukuran layar<br>
+          • <code>&lt;audio&gt;</code> - Memutar file audio dengan kontrol pemutaran<br>
+          • <code>controls</code> - Menampilkan kontrol pemutaran default<br>
+          • <code>&lt;source&gt;</code> - Menentukan sumber media alternatif<br>
+          • <code>srcset</code> - Menyediakan berbagai versi gambar untuk perangkat berbeda<br>
+          • Selalu sertakan <code>alt</code> text untuk aksesibilitas
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Gunakan atribut <code>loading="lazy"</code> pada gambar untuk optimasi performa (lazy loading)!</p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2 class="section-title">
+        <span>🔗</span>
+        <span>Video & Embedded Content</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 Video dan Konten External</h4>
+        <p>HTML5 menyediakan elemen native untuk video dan embed konten dari platform lain.</p>
+      </div>
+      
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>video.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="comment">&lt;!-- Video HTML5 --&gt;</span><br>
+            <span class="tag">&lt;video <span class="attr">width</span>=<span class="string">"640"</span> <span class="attr">height</span>=<span class="string">"360"</span> <span class="attr">controls</span> <span class="attr">poster</span>=<span class="string">"preview.jpg"</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;source <span class="attr">src</span>=<span class="string">"video.mp4"</span> <span class="attr">type</span>=<span class="string">"video/mp4"</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;source <span class="attr">src</span>=<span class="string">"video.webm"</span> <span class="attr">type</span>=<span class="string">"video/webm"</span>&gt;</span><br>
+            &nbsp;&nbsp;Browser Anda tidak mendukung elemen video.<br>
+            <span class="tag">&lt;/video&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- YouTube Embed --&gt;</span><br>
+            <span class="tag">&lt;iframe <span class="attr">width</span>=<span class="string">"560"</span> <span class="attr">height</span>=<span class="string">"315"</span> <span class="attr">src</span>=<span class="string">"https://www.youtube.com/embed/VIDEO_ID"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/iframe&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Google Maps Embed --&gt;</span><br>
+            <span class="tag">&lt;iframe <span class="attr">src</span>=<span class="string">"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."</span> <span class="attr">width</span>=<span class="string">"600"</span> <span class="attr">height</span>=<span class="string">"450"</span> <span class="attr">style</span>=<span class="string">"border:0;"</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/iframe&gt;</span>
+          </code>
+        </div>
+      </div>
+      
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>&lt;video&gt;</code> - Menampilkan <strong>video</strong> dengan berbagai format<br>
+          • <code>poster</code> - Gambar preview sebelum video diputar<br>
+          • <code>autoplay</code> - Memulai pemutaran otomatis (hati-hati penggunaannya)<br>
+          • <code>loop</code> - Video akan berulang setelah selesai<br>
+          • <code>&lt;iframe&gt;</code> - Menyematkan <span class="highlight">konten eksternal</span><br>
+          • YouTube dan Maps menyediakan kode embed yang bisa langsung digunakan<br>
+          • Atribut <code>allowfullscreen</code> memungkinkan mode layar penuh
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Untuk video background, gunakan <code>autoplay muted loop</code> dan CSS <code>position: fixed</code> untuk efek yang menarik!</p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2 class="section-title">
+        <span>🎨</span>
+        <span>Media Styling & Optimization</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 CSS untuk Media Elements</h4>
+        <p>Gunakan CSS untuk membuat elemen media lebih responsif dan menarik.</p>
+      </div>
+      
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>style.css</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="comment">/* Gambar responsif */</span><br>
+            <span class="tag">img</span> {<br>
+            &nbsp;&nbsp;<span class="attr">max-width</span>: <span class="string">100%</span>;<br>
+            &nbsp;&nbsp;<span class="attr">height</span>: <span class="string">auto</span>;<br>
+            &nbsp;&nbsp;<span class="attr">border-radius</span>: <span class="string">8px</span>;<br>
+            }<br><br>
+            
+            <span class="comment">/* Video container responsif */</span><br>
+            <span class="tag">.video-container</span> {<br>
+            &nbsp;&nbsp;<span class="attr">position</span>: <span class="string">relative</span>;<br>
+            &nbsp;&nbsp;<span class="attr">padding-bottom</span>: <span class="string">56.25%</span>; <span class="comment">/* 16:9 Aspect Ratio */</span><br>
+            &nbsp;&nbsp;<span class="attr">height</span>: <span class="string">0</span>;<br>
+            &nbsp;&nbsp;<span class="attr">overflow</span>: <span class="string">hidden</span>;<br>
+            }<br><br>
+            
+            <span class="tag">.video-container iframe</span> {<br>
+            &nbsp;&nbsp;<span class="attr">position</span>: <span class="string">absolute</span>;<br>
+            &nbsp;&nbsp;<span class="attr">top</span>: <span class="string">0</span>;<br>
+            &nbsp;&nbsp;<span class="attr">left</span>: <span class="string">0</span>;<br>
+            &nbsp;&nbsp;<span class="attr">width</span>: <span class="string">100%</span>;<br>
+            &nbsp;&nbsp;<span class="attr">height</span>: <span class="string">100%</span>;<br>
+            }<br><br>
+            
+            <span class="comment">/* Efek hover gambar */</span><br>
+            <span class="tag">img:hover</span> {<br>
+            &nbsp;&nbsp;<span class="attr">transform</span>: <span class="string">scale(1.02)</span>;<br>
+            &nbsp;&nbsp;<span class="attr">transition</span>: <span class="string">transform 0.3s ease</span>;<br>
+            &nbsp;&nbsp;<span class="attr">box-shadow</span>: <span class="string">0 0 20px rgba(0, 188, 212, 0.5)</span>;<br>
+            }
+          </code>
+        </div>
+      </div>
+      
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>max-width: 100%</code> - Membuat gambar <strong>scalable</strong> dengan container<br>
+          • <code>height: auto</code> - Mempertahankan aspect ratio gambar<br>
+          • Padding-bottom trick - Teknik untuk mempertahankan <span class="highlight">aspect ratio</span> video<br>
+          • <code>object-fit: cover</code> - Berguna untuk gambar yang perlu mengisi container<br>
+          • Efek hover - Memberikan feedback visual saat interaksi<br>
+          • <code>border-radius</code> - Membuat sudut elemen media melengkung<br>
+          • Gunakan <code>@media</code> queries untuk penyesuaian di berbagai ukuran layar
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Gunakan format gambar modern seperti WebP untuk kompresi yang lebih baik, dan sertakan fallback PNG/JPG!</p>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

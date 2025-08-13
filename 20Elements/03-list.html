@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML List Elements Demo</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>💥 ListElements</h1>
+    <p>Panduan lengkap elemen list HTML untuk pengembangan web modern</p>
+  </header>
+  
+  <div class="container">
+    <section class="section">
+      <h2 class="section-title">
+        <span>📝</span>
+        <span>Basic Lists</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 Dasar-dasar List</h4>
+        <p>HTML menyediakan tiga jenis list utama: unordered, ordered, dan description lists.</p>
+      </div>
+
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>lists.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="comment">&lt;!-- Unordered List --&gt;</span><br>
+            <span class="tag">&lt;ul&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>Item 1<span class="tag">&lt;/li&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>Item 2<span class="tag">&lt;/li&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>Item 3<span class="tag">&lt;/li&gt;</span><br>
+            <span class="tag">&lt;/ul&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Ordered List --&gt;</span><br>
+            <span class="tag">&lt;ol&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>First step<span class="tag">&lt;/li&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>Second step<span class="tag">&lt;/li&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>Third step<span class="tag">&lt;/li&gt;</span><br>
+            <span class="tag">&lt;/ol&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Description List --&gt;</span><br>
+            <span class="tag">&lt;dl&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;dt&gt;</span>HTML<span class="tag">&lt;/dt&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;dd&gt;</span>HyperText Markup Language<span class="tag">&lt;/dd&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;dt&gt;</span>CSS<span class="tag">&lt;/dt&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;dd&gt;</span>Cascading Style Sheets<span class="tag">&lt;/dd&gt;</span><br>
+            <span class="tag">&lt;/dl&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>&lt;ul&gt;</code> - <strong>Unordered List</strong> (bullet points)<br>
+          • <code>&lt;ol&gt;</code> - <strong>Ordered List</strong> (nomor/angka)<br>
+          • <code>&lt;li&gt;</code> - <span class="highlight">List Item</span> untuk kedua jenis list di atas<br>
+          • <code>&lt;dl&gt;</code> - <strong>Description List</strong> untuk istilah dan definisi<br>
+          • <code>&lt;dt&gt;</code> - Term/konsep yang dideskripsikan<br>
+          • <code>&lt;dd&gt;</code> - Deskripsi dari term tersebut<br>
+          • List bisa <strong>disarang</strong> (nested) untuk hierarki kompleks
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Gunakan <code>&lt;ol start="50"&gt;</code> untuk memulai ordered list dari angka tertentu, atau <code>reversed</code> untuk urutan terbalik!</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">
+        <span>🔗</span>
+        <span>Advanced List Features</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 Fitur Lanjutan List</h4>
+        <p>HTML5 memperkenalkan beberapa atribut berguna untuk list yang lebih canggih.</p>
+      </div>
+
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>advanced-lists.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="comment">&lt;!-- Ordered List dengan tipe berbeda --&gt;</span><br>
+            <span class="tag">&lt;ol <span class="attr">type</span>=<span class="string">"A"</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>Huruf besar (A, B, C)<span class="tag">&lt;/li&gt;</span><br>
+            <span class="tag">&lt;/ol&gt;</span><br><br>
+            
+            <span class="tag">&lt;ol <span class="attr">type</span>=<span class="string">"i"</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>Angka romawi kecil (i, ii, iii)<span class="tag">&lt;/li&gt;</span><br>
+            <span class="tag">&lt;/ol&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- List dengan marker custom --&gt;</span><br>
+            <span class="tag">&lt;ul <span class="attr">style</span>=<span class="string">"list-style-type: square;"</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>Item dengan kotak<span class="tag">&lt;/li&gt;</span><br>
+            <span class="tag">&lt;/ul&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- List dengan start tertentu --&gt;</span><br>
+            <span class="tag">&lt;ol <span class="attr">start</span>=<span class="string">"10"</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>Item dimulai dari 10<span class="tag">&lt;/li&gt;</span><br>
+            <span class="tag">&lt;/ol&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- List terbalik --&gt;</span><br>
+            <span class="tag">&lt;ol <span class="attr">reversed</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>Item ketiga<span class="tag">&lt;/li&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>Item kedua<span class="tag">&lt;/li&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>Item pertama<span class="tag">&lt;/li&gt;</span><br>
+            <span class="tag">&lt;/ol&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>type</code> - Mengubah <strong>tipe penomoran</strong> (1, A, a, I, i)<br>
+          • <code>start</code> - Menentukan <span class="highlight">angka awal</span> untuk ordered list<br>
+          • <code>reversed</code> - Membalik urutan penomoran<br>
+          • <code>list-style-type</code> - CSS untuk mengubah bullet style (disc, circle, square, none)<br>
+          • <code>value</code> - Atribut pada <code>&lt;li&gt;</code> untuk mengubah nomor tertentu<br>
+          • List bisa dikombinasikan dengan <strong>elemen HTML lain</strong> seperti gambar dan link
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Untuk navigasi, gunakan <code>&lt;nav&gt;</code> dengan list di dalamnya. Ini meningkatkan aksesibilitas dan SEO!</p>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

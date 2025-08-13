@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Technical Elements Demo</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>💥 TechnicalElements</h1>
+    <p>Panduan lengkap elemen teknis HTML untuk pengembangan web modern</p>
+  </header>
+  
+  <div class="container">
+    <section class="section">
+      <h2 class="section-title">
+        <span>📝</span>
+        <span>Basic Technical Elements</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 Elemen Teknis Dasar</h4>
+        <p>HTML menyediakan berbagai elemen teknis untuk keperluan metadata, performa, dan optimasi.</p>
+      </div>
+      
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>technical.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="comment">&lt;!-- Metadata dasar --&gt;</span><br>
+            <span class="tag">&lt;meta <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span><br>
+            <span class="tag">&lt;meta <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br>
+            <span class="tag">&lt;meta <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">"Deskripsi halaman"</span>&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Preload resources --&gt;</span><br>
+            <span class="tag">&lt;link <span class="attr">rel</span>=<span class="string">"preload"</span> <span class="attr">href</span>=<span class="string">"font.woff2"</span> <span class="attr">as</span>=<span class="string">"font"</span> <span class="attr">type</span>=<span class="string">"font/woff2"</span> <span class="attr">crossorigin</span>&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Favicon modern --&gt;</span><br>
+            <span class="tag">&lt;link <span class="attr">rel</span>=<span class="string">"icon"</span> <span class="attr">type</span>=<span class="string">"image/svg+xml"</span> <span class="attr">href</span>=<span class="string">"/favicon.svg"</span>&gt;</span><br>
+            <span class="tag">&lt;link <span class="attr">rel</span>=<span class="string">"apple-touch-icon"</span> <span class="attr">href</span>=<span class="string">"/apple-touch-icon.png"</span>&gt;</span><br>
+            <span class="tag">&lt;meta <span class="attr">name</span>=<span class="string">"theme-color"</span> <span class="attr">content</span>=<span class="string">"#1a1a1a"</span>&gt;</span>
+          </code>
+        </div>
+      </div>
+      
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>&lt;meta charset&gt;</code> - <strong>Encoding karakter</strong> wajib untuk dokumen HTML5<br>
+          • <code>&lt;meta viewport&gt;</code> - Penting untuk <span class="highlight">tampilan mobile</span><br>
+          • <code>&lt;meta description&gt;</code> - Deskripsi untuk SEO dan social media<br>
+          • <code>&lt;link preload&gt;</code> - Memuat resource penting lebih awal<br>
+          • <code>as</code> - Menentukan jenis resource yang dipreload<br>
+          • Favicon modern - SVG untuk kualitas tinggi, PNG untuk fallback<br>
+          • <code>theme-color</code> - Warna tema browser mobile
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Gunakan <code>&lt;meta name="robots" content="index, follow"&gt;</code> untuk kontrol SEO dasar!</p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2 class="section-title">
+        <span>🔗</span>
+        <span>Performance Optimization</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 Optimasi Performa</h4>
+        <p>Elemen teknis untuk meningkatkan kecepatan dan efisiensi halaman web.</p>
+      </div>
+      
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>performance.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="comment">&lt;!-- Lazy loading images --&gt;</span><br>
+            <span class="tag">&lt;img <span class="attr">src</span>=<span class="string">"image.jpg"</span> <span class="attr">loading</span>=<span class="string">"lazy"</span> <span class="attr">alt</span>=<span class="string">"Deskripsi"</span>&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Async/defer scripts --&gt;</span><br>
+            <span class="tag">&lt;script <span class="attr">src</span>=<span class="string">"script.js"</span> <span class="attr">defer</span>&gt;</span><span class="tag">&lt;/script&gt;</span><br>
+            <span class="tag">&lt;script <span class="attr">src</span>=<span class="string">"analytics.js"</span> <span class="attr">async</span>&gt;</span><span class="tag">&lt;/script&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Resource hints --&gt;</span><br>
+            <span class="tag">&lt;link <span class="attr">rel</span>=<span class="string">"preconnect"</span> <span class="attr">href</span>=<span class="string">"https://api.example.com"</span>&gt;</span><br>
+            <span class="tag">&lt;link <span class="attr">rel</span>=<span class="string">"dns-prefetch"</span> <span class="attr">href</span>=<span class="string">"//cdn.example.com"</span>&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Critical CSS --&gt;</span><br>
+            <span class="tag">&lt;style&gt;</span><br>
+            &nbsp;&nbsp;<span class="comment">/* CSS kritis di sini */</span><br>
+            <span class="tag">&lt;/style&gt;</span><br>
+            <span class="tag">&lt;link <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"styles.css"</span> <span class="attr">media</span>=<span class="string">"print"</span> <span class="attr">onload</span>=<span class="string">"this.media='all'"</span>&gt;</span>
+          </code>
+        </div>
+      </div>
+      
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>loading="lazy"</code> - <strong>Lazy loading</strong> untuk gambar di bawah fold<br>
+          • <code>defer</code> - Menunda eksekusi script sampai HTML selesai parsing<br>
+          • <code>async</code> - Eksekusi script asinkron tanpa blocking render<br>
+          • <code>preconnect</code> - Membuat koneksi awal ke domain eksternal<br>
+          • <code>dns-prefetch</code> - Resolve DNS lebih awal untuk domain eksternal<br>
+          • Critical CSS - CSS penting dalam <code>&lt;style&gt;</code> untuk render cepat<br>
+          • Teknik loadCSS - Memuat stylesheet non-blocking dengan media print
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Gunakan <code>&lt;link rel="modulepreload"&gt;</code> untuk memuat modul JavaScript ES6 lebih awal!</p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2 class="section-title">
+        <span>🎨</span>
+        <span>Advanced Technical Features</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 Fitur Teknis Lanjutan</h4>
+        <p>Elemen teknis canggih untuk pengalaman web modern.</p>
+      </div>
+      
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>advanced.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="comment">&lt;!-- Web Components --&gt;</span><br>
+            <span class="tag">&lt;template <span class="attr">id</span>=<span class="string">"user-card"</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;style&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">/* Scoped CSS */</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;/style&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;div <span class="attr">class</span>=<span class="string">"card"</span>&gt;</span>...<span class="tag">&lt;/div&gt;</span><br>
+            <span class="tag">&lt;/template&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- SVG inline --&gt;</span><br>
+            <span class="tag">&lt;svg <span class="attr">width</span>=<span class="string">"100"</span> <span class="attr">height</span>=<span class="string">"100"</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;circle <span class="attr">cx</span>=<span class="string">"50"</span> <span class="attr">cy</span>=<span class="string">"50"</span> <span class="attr">r</span>=<span class="string">"40"</span> <span class="attr">fill</span>=<span class="string">"#00bcd4"</span>/&gt;</span><br>
+            <span class="tag">&lt;/svg&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- MathML --&gt;</span><br>
+            <span class="tag">&lt;math&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;mrow&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;msup&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;mi&gt;</span>a<span class="tag">&lt;/mi&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;mn&gt;</span>2<span class="tag">&lt;/mn&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/msup&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;/mrow&gt;</span><br>
+            <span class="tag">&lt;/math&gt;</span>
+          </code>
+        </div>
+      </div>
+      
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>&lt;template&gt;</code> - <strong>Template HTML</strong> untuk Web Components<br>
+          • <code>&lt;slot&gt;</code> - Placeholder untuk komponen yang bisa diisi<br>
+          • SVG inline - Grafik vektor langsung dalam HTML<br>
+          • MathML - Untuk menampilkan <span class="highlight">notasi matematika</span><br>
+          • <code>&lt;picture&gt;</code> - Responsive images dengan fallback<br>
+          • <code>&lt;dialog&gt;</code> - Native modal dialog<br>
+          • Custom Elements - Mendefinisikan elemen HTML baru
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Gunakan <code>&lt;meta http-equiv="Content-Security-Policy"&gt;</code> untuk meningkatkan keamanan dengan CSP!</p>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

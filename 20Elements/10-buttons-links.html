@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons & Links Elements</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>💥 Elements</h1>
+    <p>Panduan lengkap elemen Button & Link untuk pengembangan web modern</p>
+  </header>
+  
+  <div class="container">
+    <section class="section">
+      <h2 class="section-title">
+        <span>📝</span>
+        <span>Basic Buttons</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 Dasar Button HTML</h4>
+        <p>Button adalah elemen interaktif penting dalam antarmuka pengguna web.</p>
+      </div>
+      
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>buttons.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="comment">&lt;!-- Button dasar --&gt;</span><br>
+            <span class="tag">&lt;button <span class="attr">type</span>=<span class="string">"button"</span>&gt;</span>Click Me<span class="tag">&lt;/button&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Submit button --&gt;</span><br>
+            <span class="tag">&lt;button <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span>Submit Form<span class="tag">&lt;/button&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Reset button --&gt;</span><br>
+            <span class="tag">&lt;button <span class="attr">type</span>=<span class="string">"reset"</span>&gt;</span>Reset Form<span class="tag">&lt;/button&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Disabled button --&gt;</span><br>
+            <span class="tag">&lt;button <span class="attr">disabled</span>&gt;</span>Disabled Button<span class="tag">&lt;/button&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Button dengan icon --&gt;</span><br>
+            <span class="tag">&lt;button&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;i <span class="attr">class</span>=<span class="string">"fa fa-download"</span>&gt;</span><span class="tag">&lt;/i&gt;</span> Download<br>
+            <span class="tag">&lt;/button&gt;</span>
+          </code>
+        </div>
+      </div>
+      
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>&lt;button&gt;</code> - Elemen dasar untuk membuat tombol interaktif<br>
+          • <code>type="button"</code> - Tombol standar tanpa perilaku default<br>
+          • <code>type="submit"</code> - Untuk mengirimkan formulir<br>
+          • <code>type="reset"</code> - Mereset nilai formulir ke default<br>
+          • <code>disabled</code> - Menonaktifkan tombol (tidak bisa diklik)<br>
+          • Tombol dapat berisi teks, gambar, atau elemen HTML lainnya<br>
+          • Selalu tentukan atribut <code>type</code> untuk perilaku yang konsisten
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Gunakan <code>type="button"</code> secara eksplisit untuk tombol yang tidak submit/reset form untuk menghindari perilaku tak terduga!</p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2 class="section-title">
+        <span>🔗</span>
+        <span>Advanced Links</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 Hyperlink Lanjutan</h4>
+        <p>Link adalah elemen fundamental untuk navigasi di web.</p>
+      </div>
+      
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>links.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="comment">&lt;!-- Link dasar --&gt;</span><br>
+            <span class="tag">&lt;a <span class="attr">href</span>=<span class="string">"https://example.com"</span>&gt;</span>Visit Example<span class="tag">&lt;/a&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Link dengan target --&gt;</span><br>
+            <span class="tag">&lt;a <span class="attr">href</span>=<span class="string">"/about"</span> <span class="attr">target</span>=<span class="string">"_blank"</span> <span class="attr">rel</span>=<span class="string">"noopener noreferrer"</span>&gt;</span><br>
+            &nbsp;&nbsp;About Us (buka di tab baru)<br>
+            <span class="tag">&lt;/a&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Link ke bagian halaman --&gt;</span><br>
+            <span class="tag">&lt;a <span class="attr">href</span>=<span class="string">"#section-2"</span>&gt;</span>Jump to Section 2<span class="tag">&lt;/a&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Link email --&gt;</span><br>
+            <span class="tag">&lt;a <span class="attr">href</span>=<span class="string">"mailto:contact@example.com"</span>&gt;</span>Email Us<span class="tag">&lt;/a&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Link telepon --&gt;</span><br>
+            <span class="tag">&lt;a <span class="attr">href</span>=<span class="string">"tel:+1234567890"</span>&gt;</span>Call Us<span class="tag">&lt;/a&gt;</span>
+          </code>
+        </div>
+      </div>
+      
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>&lt;a&gt;</code> - Elemen anchor untuk membuat hyperlink<br>
+          • <code>href</code> - Menentukan URL tujuan (wajib)<br>
+          • <code>target="_blank"</code> - Membuka link di tab/window baru<br>
+          • <code>rel="noopener noreferrer"</code> - Keamanan untuk link yang dibuka di tab baru<br>
+          • <code>href="#id"</code> - Link ke bagian dalam halaman yang sama<br>
+          • <code>mailto:</code> - Membuka client email default pengguna<br>
+          • <code>tel:</code> - Memanggil nomor telepon (di perangkat mobile)<br>
+          • Selalu gunakan teks link yang deskriptif untuk aksesibilitas
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Selalu tambahkan <code>rel="noopener noreferrer"</code> saat menggunakan <code>target="_blank"</code> untuk mencegah serangan tabnabbing!</p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2 class="section-title">
+        <span>🎨</span>
+        <span>Button Styling</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 CSS untuk Button Modern</h4>
+        <p>CSS dapat mengubah tampilan button menjadi lebih menarik.</p>
+      </div>
+      
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>styles.css</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="comment">/* Button dasar dengan styling modern */</span><br>
+            .btn {<br>
+            &nbsp;&nbsp;display: inline-block;<br>
+            &nbsp;&nbsp;padding: 12px 24px;<br>
+            &nbsp;&nbsp;background: linear-gradient(45deg, #00bcd4, #00e5ff);<br>
+            &nbsp;&nbsp;color: white;<br>
+            &nbsp;&nbsp;border: none;<br>
+            &nbsp;&nbsp;border-radius: 50px;<br>
+            &nbsp;&nbsp;font-size: 1rem;<br>
+            &nbsp;&nbsp;cursor: pointer;<br>
+            &nbsp;&nbsp;transition: all 0.3s ease;<br>
+            &nbsp;&nbsp;box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);<br>
+            }<br><br>
+            
+            <span class="comment">/* Efek hover */</span><br>
+            .btn:hover {<br>
+            &nbsp;&nbsp;transform: translateY(-2px);<br>
+            &nbsp;&nbsp;box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);<br>
+            }<br><br>
+            
+            <span class="comment">/* Efek aktif */</span><br>
+            .btn:active {<br>
+            &nbsp;&nbsp;transform: translateY(0);<br>
+            }<br><br>
+            
+            <span class="comment">/* Button disabled */</span><br>
+            .btn:disabled {<br>
+            &nbsp;&nbsp;background: #cccccc;<br>
+            &nbsp;&nbsp;cursor: not-allowed;<br>
+            }
+          </code>
+        </div>
+      </div>
+      
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>padding</code> - Menentukan ukuran button yang nyaman<br>
+          • <code>border-radius</code> - Membuat sudut melengkung (50px untuk pill shape)<br>
+          • <code>transition</code> - Animasi halus saat interaksi<br>
+          • <code>box-shadow</code> - Memberikan kedalaman visual<br>
+          • <code>:hover</code> - Efek saat mouse berada di atas button<br>
+          • <code>:active</code> - Efek saat button diklik<br>
+          • <code>:disabled</code> - Tampilan untuk button yang dinonaktifkan<br>
+          • Gradient background membuat button lebih menarik
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Gunakan <code>cursor: pointer</code> pada semua elemen interaktif untuk memberi tahu pengguna bahwa elemen tersebut dapat diklik!</p>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

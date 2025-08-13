@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Text Elements Demo</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>💥 TextElements</h1>
+    <p>Panduan lengkap elemen teks HTML untuk pengembangan web modern</p>
+  </header>
+  
+  <div class="container">
+    <section class="section">
+      <h2 class="section-title">
+        <span>✏️</span>
+        <span>Text Formatting</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 Format Dasar Teks</h4>
+        <p>HTML menyediakan berbagai elemen untuk memformat teks sesuai kebutuhan konten Anda.</p>
+      </div>
+
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>text-formatting.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="tag">&lt;h1&gt;</span>Heading Level 1<span class="tag">&lt;/h1&gt;</span><br>
+            <span class="tag">&lt;h2&gt;</span>Heading Level 2<span class="tag">&lt;/h2&gt;</span><br>
+            <span class="tag">&lt;p&gt;</span>Ini adalah paragraf biasa.<span class="tag">&lt;/p&gt;</span><br>
+            <span class="tag">&lt;b&gt;</span>Teks tebal<span class="tag">&lt;/b&gt;</span> dan <span class="tag">&lt;i&gt;</span>teks miring<span class="tag">&lt;/i&gt;</span><br>
+            <span class="tag">&lt;strong&gt;</span>Teks penting (strong)<span class="tag">&lt;/strong&gt;</span><br>
+            <span class="tag">&lt;em&gt;</span>Teks dengan penekanan (em)<span class="tag">&lt;/em&gt;</span><br>
+            <span class="tag">&lt;mark&gt;</span>Teks yang ditandai<span class="tag">&lt;/mark&gt;</span><br>
+            <span class="tag">&lt;small&gt;</span>Teks kecil<span class="tag">&lt;/small&gt;</span><br>
+            <span class="tag">&lt;del&gt;</span>Teks yang dihapus<span class="tag">&lt;/del&gt;</span><br>
+            <span class="tag">&lt;ins&gt;</span>Teks yang disisipkan<span class="tag">&lt;/ins&gt;</span><br>
+            <span class="tag">&lt;sub&gt;</span>Subscript<span class="tag">&lt;/sub&gt;</span> dan <span class="tag">&lt;sup&gt;</span>Superscript<span class="tag">&lt;/sup&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>&lt;h1&gt;</code> sampai <code>&lt;h6&gt;</code> - <strong>Heading</strong> untuk hierarki judul<br>
+          • <code>&lt;p&gt;</code> - Elemen <span class="highlight">paragraf</span> dasar<br>
+          • <code>&lt;b&gt;</code> dan <code>&lt;i&gt;</code> - Untuk teks tebal dan miring (tanpa makna semantik)<br>
+          • <code>&lt;strong&gt;</code> dan <code>&lt;em&gt;</code> - Memberikan <strong>penekanan semantik</strong><br>
+          • <code>&lt;mark&gt;</code> - Menyoroti teks seperti stabilo<br>
+          • <code>&lt;small&gt;</code> - Untuk teks kecil seperti disclaimer<br>
+          • <code>&lt;del&gt;</code> dan <code>&lt;ins&gt;</code> - Menunjukkan revisi teks<br>
+          • <code>&lt;sub&gt;</code> dan <code>&lt;sup&gt;</code> - Untuk notasi ilmiah dan matematika
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Gunakan <code>&lt;strong&gt;</code> dan <code>&lt;em&gt;</code> daripada <code>&lt;b&gt;</code> dan <code>&lt;i&gt;</code> untuk aksesibilitas yang lebih baik dan makna semantik!</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">
+        <span>🔗</span>
+        <span>Links & References</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 Hyperlink dan Kutipan</h4>
+        <p>Elemen untuk membuat tautan dan referensi dalam dokumen HTML.</p>
+      </div>
+
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>links.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="comment">&lt;!-- Link biasa --&gt;</span><br>
+            <span class="tag">&lt;a <span class="attr">href</span>=<span class="string">"https://example.com"</span>&gt;</span>Visit Example<span class="tag">&lt;/a&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Link dengan target --&gt;</span><br>
+            <span class="tag">&lt;a <span class="attr">href</span>=<span class="string">"/about"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>About Us (buka di tab baru)<span class="tag">&lt;/a&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Kutipan --&gt;</span><br>
+            <span class="tag">&lt;blockquote <span class="attr">cite</span>=<span class="string">"https://example.com/source"</span>&gt;</span><br>
+            &nbsp;&nbsp;Ini adalah kutipan panjang yang mungkin berasal dari sumber eksternal.<br>
+            <span class="tag">&lt;/blockquote&gt;</span><br><br>
+            
+            <span class="tag">&lt;q&gt;</span>Ini adalah kutipan pendek.<span class="tag">&lt;/q&gt;</span><br><br>
+            
+            <span class="tag">&lt;cite&gt;</span>The Art of HTML<span class="tag">&lt;/cite&gt;</span> oleh John Doe
+          </code>
+        </div>
+      </div>
+
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>&lt;a&gt;</code> - Elemen <strong>hyperlink</strong> untuk navigasi<br>
+          • <code>href</code> - Atribut wajib yang menentukan URL tujuan<br>
+          • <code>target="_blank"</code> - Membuka link di tab/window baru<br>
+          • <code>&lt;blockquote&gt;</code> - Untuk kutipan panjang dengan indentasi<br>
+          • <code>&lt;q&gt;</code> - Untuk kutipan pendek (biasanya dengan tanda kutip)<br>
+          • <code>&lt;cite&gt;</code> - Untuk referensi judul karya<br>
+          • Atribut <code>cite</code> - Menentukan sumber kutipan (tidak terlihat)
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Selalu gunakan atribut <code>title</code> pada link untuk penjelasan tambahan yang muncul saat hover, sangat membantu untuk aksesibilitas!</p>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

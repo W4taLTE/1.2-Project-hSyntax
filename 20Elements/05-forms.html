@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form Elements Demo</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>💥 FormElements</h1>
+    <p>Panduan lengkap elemen form HTML untuk pengembangan web modern</p>
+  </header>
+  
+  <div class="container">
+    <section class="section">
+      <h2 class="section-title">
+        <span>📝</span>
+        <span>Basic Form Elements</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 Struktur Dasar Form</h4>
+        <p>Form HTML digunakan untuk mengumpulkan input pengguna dan mengirim data ke server.</p>
+      </div>
+      
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>basic-form.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="tag">&lt;form <span class="attr">action</span>=<span class="string">"/submit"</span> <span class="attr">method</span>=<span class="string">"post"</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;label <span class="attr">for</span>=<span class="string">"name"</span>&gt;</span>Nama:<span class="tag">&lt;/label&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;input <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"name"</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">required</span>&gt;</span><br><br>
+            
+            &nbsp;&nbsp;<span class="tag">&lt;label <span class="attr">for</span>=<span class="string">"email"</span>&gt;</span>Email:<span class="tag">&lt;/label&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;input <span class="attr">type</span>=<span class="string">"email"</span> <span class="attr">id</span>=<span class="string">"email"</span> <span class="attr">name</span>=<span class="string">"email"</span> <span class="attr">required</span>&gt;</span><br><br>
+            
+            &nbsp;&nbsp;<span class="tag">&lt;label <span class="attr">for</span>=<span class="string">"password"</span>&gt;</span>Password:<span class="tag">&lt;/label&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;input <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">id</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">required</span>&gt;</span><br><br>
+            
+            &nbsp;&nbsp;<span class="tag">&lt;button <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span>Submit<span class="tag">&lt;/button&gt;</span><br>
+            <span class="tag">&lt;/form&gt;</span>
+          </code>
+        </div>
+      </div>
+      
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>&lt;form&gt;</code> - Container utama untuk semua elemen form<br>
+          • <code>action</code> - Menentukan <strong>URL tujuan</strong> pengiriman data<br>
+          • <code>method</code> - Metode HTTP (get/post) untuk pengiriman data<br>
+          • <code>&lt;label&gt;</code> - Label untuk <span class="highlight">aksesibilitas</span> dan usability<br>
+          • <code>&lt;input&gt;</code> - Elemen input dengan berbagai tipe (text, email, password)<br>
+          • <code>required</code> - Membuat field wajib diisi<br>
+          • <code>&lt;button&gt;</code> - Tombol untuk submit form
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Selalu gunakan atribut <code>for</code> pada label yang sesuai dengan <code>id</code> input untuk meningkatkan aksesibilitas!</p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2 class="section-title">
+        <span>🔗</span>
+        <span>Advanced Form Controls</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 Kontrol Form Lanjutan</h4>
+        <p>HTML5 memperkenalkan berbagai tipe input dan elemen form yang lebih canggih.</p>
+      </div>
+      
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>advanced-form.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="tag">&lt;form&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;label&gt;</span>Pilih warna favorit:<br>
+            &nbsp;&nbsp;<span class="tag">&lt;input <span class="attr">type</span>=<span class="string">"color"</span> <span class="attr">name</span>=<span class="string">"favcolor"</span>&gt;</span><span class="tag">&lt;/label&gt;</span><br><br>
+            
+            &nbsp;&nbsp;<span class="tag">&lt;label&gt;</span>Tanggal lahir:<br>
+            &nbsp;&nbsp;<span class="tag">&lt;input <span class="attr">type</span>=<span class="string">"date"</span> <span class="attr">name</span>=<span class="string">"bday"</span>&gt;</span><span class="tag">&lt;/label&gt;</span><br><br>
+            
+            &nbsp;&nbsp;<span class="tag">&lt;label&gt;</span>Range nilai:<br>
+            &nbsp;&nbsp;<span class="tag">&lt;input <span class="attr">type</span>=<span class="string">"range"</span> <span class="attr">name</span>=<span class="string">"points"</span> <span class="attr">min</span>=<span class="string">"0"</span> <span class="attr">max</span>=<span class="string">"10"</span>&gt;</span><span class="tag">&lt;/label&gt;</span><br><br>
+            
+            &nbsp;&nbsp;<span class="tag">&lt;label&gt;</span>Upload file:<br>
+            &nbsp;&nbsp;<span class="tag">&lt;input <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">name</span>=<span class="string">"myFile"</span>&gt;</span><span class="tag">&lt;/label&gt;</span><br><br>
+            
+            &nbsp;&nbsp;<span class="tag">&lt;label&gt;</span><span class="tag">&lt;input <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">name</span>=<span class="string">"subscribe"</span>&gt;</span> Subscribe newsletter<span class="tag">&lt;/label&gt;</span><br><br>
+            
+            &nbsp;&nbsp;<span class="tag">&lt;label&gt;</span>Pilih gender:<br>
+            &nbsp;&nbsp;<span class="tag">&lt;select <span class="attr">name</span>=<span class="string">"gender"</span>&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option <span class="attr">value</span>=<span class="string">"male"</span>&gt;</span>Male<span class="tag">&lt;/option&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option <span class="attr">value</span>=<span class="string">"female"</span>&gt;</span>Female<span class="tag">&lt;/option&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option <span class="attr">value</span>=<span class="string">"other"</span>&gt;</span>Other<span class="tag">&lt;/option&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;/select&gt;</span><span class="tag">&lt;/label&gt;</span><br><br>
+            
+            &nbsp;&nbsp;<span class="tag">&lt;label&gt;</span>Pesan:<br>
+            &nbsp;&nbsp;<span class="tag">&lt;textarea <span class="attr">name</span>=<span class="string">"message"</span> <span class="attr">rows</span>=<span class="string">"4"</span> <span class="attr">cols</span>=<span class="string">"50"</span>&gt;</span><span class="tag">&lt;/textarea&gt;</span><span class="tag">&lt;/label&gt;</span><br>
+            <span class="tag">&lt;/form&gt;</span>
+          </code>
+        </div>
+      </div>
+      
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>type="color"</code> - Picker warna<br>
+          • <code>type="date"</code> - Picker tanggal<br>
+          • <code>type="range"</code> - Slider dengan nilai min/max<br>
+          • <code>type="file"</code> - Upload file<br>
+          • <code>type="checkbox"</code> - Kotak centang<br>
+          • <code>&lt;select&gt;</code> - Dropdown menu<br>
+          • <code>&lt;textarea&gt;</code> - Input teks multi-baris<br>
+          • HTML5 juga menyediakan validasi otomatis untuk email, url, number, dll
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Gunakan atribut <code>placeholder</code> untuk memberikan contoh input yang diharapkan di field!</p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2 class="section-title">
+        <span>🎨</span>
+        <span>Form Styling</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 CSS untuk Form</h4>
+        <p>Gunakan CSS untuk membuat form lebih menarik dan user-friendly.</p>
+      </div>
+      
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>style.css</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="tag">form</span> {<br>
+            &nbsp;&nbsp;<span class="attr">max-width</span>: <span class="string">600px</span>;<br>
+            &nbsp;&nbsp;<span class="attr">margin</span>: <span class="string">0 auto</span>;<br>
+            &nbsp;&nbsp;<span class="attr">padding</span>: <span class="string">1.5rem</span>;<br>
+            &nbsp;&nbsp;<span class="attr">background</span>: <span class="string">#252525</span>;<br>
+            &nbsp;&nbsp;<span class="attr">border-radius</span>: <span class="string">8px</span>;<br>
+            }<br><br>
+            
+            <span class="tag">label</span> {<br>
+            &nbsp;&nbsp;<span class="attr">display</span>: <span class="string">block</span>;<br>
+            &nbsp;&nbsp;<span class="attr">margin-bottom</span>: <span class="string">0.5rem</span>;<br>
+            &nbsp;&nbsp;<span class="attr">font-weight</span>: <span class="string">bold</span>;<br>
+            }<br><br>
+            
+            <span class="tag">input, select, textarea</span> {<br>
+            &nbsp;&nbsp;<span class="attr">width</span>: <span class="string">100%</span>;<br>
+            &nbsp;&nbsp;<span class="attr">padding</span>: <span class="string">0.75rem</span>;<br>
+            &nbsp;&nbsp;<span class="attr">margin-bottom</span>: <span class="string">1rem</span>;<br>
+            &nbsp;&nbsp;<span class="attr">background</span>: <span class="string">#333</span>;<br>
+            &nbsp;&nbsp;<span class="attr">border</span>: <span class="string">1px solid #444</span>;<br>
+            &nbsp;&nbsp;<span class="attr">border-radius</span>: <span class="string">4px</span>;<br>
+            &nbsp;&nbsp;<span class="attr">color</span>: <span class="string">#fff</span>;<br>
+            }<br><br>
+            
+            <span class="tag">button</span> {<br>
+            &nbsp;&nbsp;<span class="attr">background</span>: <span class="string">#00bcd4</span>;<br>
+            &nbsp;&nbsp;<span class="attr">color</span>: <span class="string">white</span>;<br>
+            &nbsp;&nbsp;<span class="attr">padding</span>: <span class="string">0.75rem 1.5rem</span>;<br>
+            &nbsp;&nbsp;<span class="attr">border</span>: <span class="string">none</span>;<br>
+            &nbsp;&nbsp;<span class="attr">border-radius</span>: <span class="string">4px</span>;<br>
+            &nbsp;&nbsp;<span class="attr">cursor</span>: <span class="string">pointer</span>;<br>
+            }<br><br>
+            
+            <span class="tag">button:hover</span> {<br>
+            &nbsp;&nbsp;<span class="attr">background</span>: <span class="string">#00e5ff</span>;<br>
+            }
+          </code>
+        </div>
+      </div>
+      
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>max-width</code> - Membatasi lebar form untuk keterbacaan<br>
+          • <code>display: block</code> pada label - Membuat label di atas input<br>
+          • <code>width: 100%</code> - Input memenuhi container<br>
+          • <code>padding</code> - Memberikan ruang dalam input<br>
+          • <code>border-radius</code> - Membuat sudut elemen melengkung<br>
+          • <code>:hover</code> - Efek hover untuk interaktivitas<br>
+          • Warna kontras untuk tombol submit<br>
+          • Media query bisa digunakan untuk form <strong>mobile-friendly</strong>
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Gunakan <code>:focus</code> styling untuk menunjukkan field yang sedang aktif, contoh: <code>input:focus { border-color: #00bcd4; }</code></p>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Syntax Demo - SVG & MathML</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>💥 Elements</h1>
+    <p>Contoh penggunaan <strong>SVG</strong> & <strong>MathML</strong> di HTML5</p>
+  </header>
+  
+  <div class="container">
+    <section class="section">
+      <h2 class="section-title">
+        <span>📝</span>
+        <span>Basic Tables</span>
+      </h2>
+      <div class="info-box">
+        <h4>💡 Dasar SVG & MathML</h4>
+        <p>SVG digunakan untuk grafik vektor, sedangkan MathML untuk menampilkan notasi matematika secara semantik.</p>
+      </div>
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>svg-mathml.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="tag">&lt;svg <span class="attr">width</span>=<span class="string">"100"</span> <span class="attr">height</span>=<span class="string">"100"</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;circle <span class="attr">cx</span>=<span class="string">"50"</span> <span class="attr">cy</span>=<span class="string">"50"</span> <span class="attr">r</span>=<span class="string">"40"</span> <span class="attr">stroke</span>=<span class="string">"blue"</span> <span class="attr">fill</span>=<span class="string">"lightblue"</span>/&gt;</span><br>
+            <span class="tag">&lt;/svg&gt;</span><br><br>
+            <span class="tag">&lt;math xmlns</span>=<span class="string">"http://www.w3.org/1998/Math/MathML"</span><span class="tag">&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;msup&gt;</span><span class="tag">&lt;mi&gt;</span>x<span class="tag">&lt;/mi&gt;&lt;mn&gt;</span>2<span class="tag">&lt;/mn&gt;&lt;/msup&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;mo&gt;</span>+<span class="tag">&lt;/mo&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;mn&gt;</span>4<span class="tag">&lt;/mn&gt;</span><br>
+            <span class="tag">&lt;/math&gt;</span>
+          </code>
+        </div>
+      </div>
+      <div class="explanation">
+        <p><strong>🔍 Penjelasan Detail:</strong></p>
+        <p>
+          • <code>&lt;svg&gt;</code> - Root untuk grafik vektor<br>
+          • <code>&lt;circle&gt;</code> - Membuat lingkaran dengan posisi dan warna tertentu<br>
+          • <code>&lt;math&gt;</code> - Root untuk notasi MathML<br>
+          • <code>&lt;msup&gt;</code> - Superscript (pangkat)<br>
+          • <code>&lt;mi&gt;</code> - Identifier matematika<br>
+          • <code>&lt;mn&gt;</code> - Angka numerik<br>
+          • <code>&lt;mo&gt;</code> - Operator matematika
+        </p>
+      </div>
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Gunakan SVG untuk ikon responsif dan MathML untuk persamaan yang dapat diakses screen reader.</p>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Interactive Elements Demo</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>💥 InteractiveElements</h1>
+    <p>Panduan lengkap elemen interaktif HTML untuk pengembangan web modern</p>
+  </header>
+  
+  <div class="container">
+    <section class="section">
+      <h2 class="section-title">
+        <span>📝</span>
+        <span>Basic Interactive Elements</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 Dasar-dasar Interaktivitas</h4>
+        <p>HTML menyediakan berbagai elemen untuk membuat antarmuka yang interaktif dan responsif.</p>
+      </div>
+      
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>interactive.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="comment">&lt;!-- Tombol dengan berbagai tipe --&gt;</span><br>
+            <span class="tag">&lt;button <span class="attr">type</span>=<span class="string">"button"</span>&gt;</span>Klik Saya<span class="tag">&lt;/button&gt;</span><br>
+            <span class="tag">&lt;button <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span>Submit Form<span class="tag">&lt;/button&gt;</span><br>
+            <span class="tag">&lt;button <span class="attr">type</span>=<span class="string">"reset"</span>&gt;</span>Reset Form<span class="tag">&lt;/button&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Dropdown menu --&gt;</span><br>
+            <span class="tag">&lt;select <span class="attr">name</span>=<span class="string">"pilihan"</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;option <span class="attr">value</span>=<span class="string">"1"</span>&gt;</span>Pilihan 1<span class="tag">&lt;/option&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;option <span class="attr">value</span>=<span class="string">"2"</span> <span class="attr">selected</span>&gt;</span>Pilihan 2<span class="tag">&lt;/option&gt;</span><br>
+            <span class="tag">&lt;/select&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Checkbox dan Radio --&gt;</span><br>
+            <span class="tag">&lt;input <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">id</span>=<span class="string">"setuju"</span> <span class="attr">name</span>=<span class="string">"setuju"</span>&gt;</span><br>
+            <span class="tag">&lt;label <span class="attr">for</span>=<span class="string">"setuju"</span>&gt;</span>Saya setuju<span class="tag">&lt;/label&gt;</span><br><br>
+            
+            <span class="tag">&lt;input <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">id</span>=<span class="string">"pria"</span> <span class="attr">name</span>=<span class="string">"gender"</span> <span class="attr">value</span>=<span class="string">"pria"</span>&gt;</span><br>
+            <span class="tag">&lt;label <span class="attr">for</span>=<span class="string">"pria"</span>&gt;</span>Pria<span class="tag">&lt;/label&gt;</span>
+          </code>
+        </div>
+      </div>
+      
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>&lt;button&gt;</code> - Elemen interaktif utama dengan berbagai tipe (<code>button</code>, <code>submit</code>, <code>reset</code>)<br>
+          • <code>&lt;select&gt;</code> - Membuat <strong>dropdown menu</strong> dengan opsi pilihan<br>
+          • <code>&lt;option&gt;</code> - Item dalam dropdown (<code>selected</code> untuk pilihan default)<br>
+          • <code>type="checkbox"</code> - Kotak centang untuk pilihan multiple<br>
+          • <code>type="radio"</code> - Tombol radio untuk pilihan tunggal dalam grup<br>
+          • <code>&lt;label&gt;</code> - Penting untuk <span class="highlight">aksesibilitas</span> dan usability<br>
+          • <code>for</code> pada label harus sesuai dengan <code>id</code> input
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Gunakan atribut <code>disabled</code> pada elemen interaktif ketika tidak aktif, dan <code>aria-*</code> untuk meningkatkan aksesibilitas!</p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2 class="section-title">
+        <span>🔗</span>
+        <span>Advanced Interactive Elements</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 Elemen Interaktif Lanjutan</h4>
+        <p>HTML5 memperkenalkan berbagai elemen interaktif baru yang lebih canggih.</p>
+      </div>
+      
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>advanced-interactive.html</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="comment">&lt;!-- Range slider --&gt;</span><br>
+            <span class="tag">&lt;input <span class="attr">type</span>=<span class="string">"range"</span> <span class="attr">min</span>=<span class="string">"0"</span> <span class="attr">max</span>=<span class="string">"100"</span> <span class="attr">value</span>=<span class="string">"50"</span> <span class="attr">class</span>=<span class="string">"slider"</span>&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Color picker --&gt;</span><br>
+            <span class="tag">&lt;input <span class="attr">type</span>=<span class="string">"color"</span> <span class="attr">value</span>=<span class="string">"#00bcd4"</span>&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Date picker --&gt;</span><br>
+            <span class="tag">&lt;input <span class="attr">type</span>=<span class="string">"date"</span> <span class="attr">min</span>=<span class="string">"2023-01-01"</span> <span class="attr">max</span>=<span class="string">"2023-12-31"</span>&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Details disclosure --&gt;</span><br>
+            <span class="tag">&lt;details&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;summary&gt;</span>Klik untuk detail<span class="tag">&lt;/summary&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;p&gt;</span>Konten tambahan yang bisa dibuka/tutup<span class="tag">&lt;/p&gt;</span><br>
+            <span class="tag">&lt;/details&gt;</span><br><br>
+            
+            <span class="comment">&lt;!-- Dialog modal --&gt;</span><br>
+            <span class="tag">&lt;dialog <span class="attr">open</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;p&gt;</span>Ini adalah dialog modal!<span class="tag">&lt;/p&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;button <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">onclick</span>=<span class="string">"this.parentElement.close()"</span>&gt;</span>Tutup<span class="tag">&lt;/button&gt;</span><br>
+            <span class="tag">&lt;/dialog&gt;</span>
+          </code>
+        </div>
+      </div>
+      
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>type="range"</code> - <strong>Slider</strong> untuk memilih nilai dalam range<br>
+          • <code>type="color"</code> - Picker warna native<br>
+          • <code>type="date"</code> - Kalender untuk memilih tanggal (bisa dengan <code>min</code>/<code>max</code>)<br>
+          • <code>&lt;details&gt;</code> dan <code>&lt;summary&gt;</code> - Membuat <span class="highlight">konten yang bisa dibuka/tutup</span><br>
+          • <code>&lt;dialog&gt;</code> - Kotak dialog/modal (gunakan JavaScript untuk toggle)<br>
+          • <code>open</code> - Atribut untuk menampilkan dialog secara default<br>
+          • Banyak elemen ini memiliki pseudo-class CSS seperti <code>:checked</code> dan <code>:focus</code>
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Untuk dialog yang lebih kompleks, gunakan atribut <code>aria-modal="true"</code> dan kelola fokus keyboard untuk aksesibilitas yang lebih baik!</p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2 class="section-title">
+        <span>🎨</span>
+        <span>Interactive Elements Styling</span>
+      </h2>
+      
+      <div class="info-box">
+        <h4>💡 CSS untuk Elemen Interaktif</h4>
+        <p>Gunakan CSS untuk membuat elemen interaktif lebih menarik dan konsisten di berbagai browser.</p>
+      </div>
+      
+      <div class="code-container">
+        <div class="code-header">
+          <div class="code-dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span>style.css</span>
+        </div>
+        <div class="code-block">
+          <code>
+            <span class="comment">/* Style dasar untuk tombol */</span><br>
+            <span class="tag">button</span> {<br>
+            &nbsp;&nbsp;<span class="attr">background</span>: <span class="string">#00bcd4</span>;<br>
+            &nbsp;&nbsp;<span class="attr">color</span>: <span class="string">white</span>;<br>
+            &nbsp;&nbsp;<span class="attr">padding</span>: <span class="string">0.75rem 1.5rem</span>;<br>
+            &nbsp;&nbsp;<span class="attr">border</span>: <span class="string">none</span>;<br>
+            &nbsp;&nbsp;<span class="attr">border-radius</span>: <span class="string">4px</span>;<br>
+            &nbsp;&nbsp;<span class="attr">cursor</span>: <span class="string">pointer</span>;<br>
+            &nbsp;&nbsp;<span class="attr">transition</span>: <span class="string">all 0.3s ease</span>;<br>
+            }<br><br>
+            
+            <span class="tag">button:hover</span> {<br>
+            &nbsp;&nbsp;<span class="attr">background</span>: <span class="string">#00e5ff</span>;<br>
+            &nbsp;&nbsp;<span class="attr">transform</span>: <span class="string">translateY(-2px)</span>;<br>
+            }<br><br>
+            
+            <span class="comment">/* Style untuk input */</span><br>
+            <span class="tag">input, select</span> {<br>
+            &nbsp;&nbsp;<span class="attr">padding</span>: <span class="string">0.5rem</span>;<br>
+            &nbsp;&nbsp;<span class="attr">border</span>: <span class="string">1px solid #444</span>;<br>
+            &nbsp;&nbsp;<span class="attr">border-radius</span>: <span class="string">4px</span>;<br>
+            &nbsp;&nbsp;<span class="attr">background</span>: <span class="string">#2d2d2d</span>;<br>
+            &nbsp;&nbsp;<span class="attr">color</span>: <span class="string">#e0e0e0</span>;<br>
+            }<br><br>
+            
+            <span class="comment">/* Style khusus untuk range slider */</span><br>
+            <span class="tag">input[type="range"]</span> {<br>
+            &nbsp;&nbsp;<span class="attr">-webkit-appearance</span>: <span class="string">none</span>;<br>
+            &nbsp;&nbsp;<span class="attr">height</span>: <span class="string">5px</span>;<br>
+            &nbsp;&nbsp;<span class="attr">background</span>: <span class="string">#444</span>;<br>
+            &nbsp;&nbsp;<span class="attr">border-radius</span>: <span class="string">5px</span>;<br>
+            }<br><br>
+            
+            <span class="comment">/* Style untuk dialog */</span><br>
+            <span class="tag">dialog</span> {<br>
+            &nbsp;&nbsp;<span class="attr">border</span>: <span class="string">none</span>;<br>
+            &nbsp;&nbsp;<span class="attr">border-radius</span>: <span class="string">8px</span>;<br>
+            &nbsp;&nbsp;<span class="attr">background</span>: <span class="string">#2d2d2d</span>;<br>
+            &nbsp;&nbsp;<span class="attr">color</span>: <span class="string">white</span>;<br>
+            &nbsp;&nbsp;<span class="attr">box-shadow</span>: <span class="string">0 0 20px rgba(0,0,0,0.5)</span>;<br>
+            }
+          </code>
+        </div>
+      </div>
+      
+      <div class="explanation">
+        <p>
+          <strong>🔍 Penjelasan Detail:</strong>
+        </p>
+        <p>
+          • <code>cursor: pointer</code> - Mengubah kursor saat hover untuk menunjukkan interaktivitas<br>
+          • <code>transition</code> - Animasi halus saat perubahan state<br>
+          • <code>:hover</code> dan <code>:focus</code> - State penting untuk <span class="highlight">feedback visual</span><br>
+          • <code>-webkit-appearance: none</code> - Reset style default browser<br>
+          • Pseudo-elemen seperti <code>::-webkit-slider-thumb</code> untuk styling lebih dalam<br>
+          • <code>box-shadow</code> - Memberikan depth pada elemen interaktif<br>
+          • Warna kontras untuk state aktif/fokus meningkatkan aksesibilitas<br>
+          • Media query untuk penyesuaian di berbagai ukuran layar
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <h4>⚡ Pro Tips</h4>
+        <p>Gunakan <code>:focus-visible</code> untuk styling fokus yang hanya muncul saat navigasi keyboard, bukan klik mouse!</p>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
