@@ -1,4 +1,4 @@
-# MySyntaxHTML
+# SyntaxHTML
 
 Kumpulan contoh sintaks **HTML** untuk dokumentasi dan referensi pribadi.  
 Project ini berisi 20 contoh elemen HTML dasar hingga lanjutan (jika ada).
@@ -21,7 +21,7 @@ SyntaxHTML/
 - Bisa dikembangkan sesuai kebutuhan
 
 ## 🔍 Preview Code
-**Https://
+**https://w4talte.github.io/1.2-Project-hSyntax/
 
 ✍️ Dibuat oleh: [Wahyu Taufik Hidayat]  
 📅 Tahun: 2025
